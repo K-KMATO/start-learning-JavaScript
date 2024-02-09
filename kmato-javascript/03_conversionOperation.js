@@ -16,11 +16,35 @@ let scoreNum = Number(score) // converted string to Number
 
 let userLoggedIn = "33abs"
 let loggedIn = Boolean(userLoggedIn)
-console.log(loggedIn)
-console.log(typeof loggedIn)
+// console.log(loggedIn)
+// console.log(typeof loggedIn)
 
 // 1-->True
 // ""--> false
 // "kmato"--> true
 // null--> false
 // "33abs"--> true
+
+
+
+// ***************************Operations************************
+
+let value = 3;
+let negValue = -value;
+// console.log(negValue);
+
+// console.log(2+2)
+// console.log(2-2)
+// console.log(2*2)
+// console.log(2**3)
+// console.log(2/2)
+// console.log(2%2)
+
+let str1 = "Hello kmato"
+let str2 = " Hello imran"
+// console.log(str1+str2)
+
+console.log(1 + 3 + "8");
+console.log("2" + 2);
+console.log("2" + 3 +9);
+
