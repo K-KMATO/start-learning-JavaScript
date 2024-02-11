@@ -49,9 +49,35 @@ const users = [
 
   // console.log( users[2].email)
 
-  console.log(Object.keys(instaUser));
-  console.log(Object.values(instaUser));
-  console.log(Object.entries(instaUser));
+
+  // object de-structure
+
+  const product = {
+    mrp : 1499,
+    bag : "safari backpack",
+    ownerName: "Imran Ahmad Khan"
+  }
+
+  // product.ownerName
+
+  const {ownerName : name} = product
+  console.log(name);
 
 
-  console.log(instaUser.hasOwnProperty('isLoggedIn'));
+  // JSON Api 
+
+
+  // object form
+  // _{
+  //   "name":"imran ahmad khan",
+  //   "email":"kmato@gmail.com"
+  //   "address":"bhiwandi maharastra"
+  // }
+
+   // Array form 
+  // [
+  //    {},
+  //    {},
+  //    {},
+  //    {},
+  // ]
