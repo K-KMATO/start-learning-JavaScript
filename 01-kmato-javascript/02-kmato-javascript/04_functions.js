@@ -17,7 +17,7 @@ function addTwoNumber(number1,number2)//parameter
 }
 
 const result =addTwoNumber(4,5)//argument
-console.log("Result:", result)
+// console.log("Result:", result)
 
 // function isUserLoggedIn(user){
 
@@ -43,6 +43,42 @@ return `${user} logged in successfully`
 
 }
 
-console.log(isUserLoggedIn())
+// console.log(isUserLoggedIn())
 
 
+// function calculateCartPrice(num1){
+//   return num1
+// }
+// console.log(calculateCartPrice(100,200,300))//value will be first one only
+
+function calculateCartPrice(...num1/*rest operator*/){
+  return num1
+}
+// console.log(calculateCartPrice(100,200,300))//value will be return as array 
+
+
+const allUser ={
+  userName : "kmato",
+  price : 999
+}
+
+function hadnleObject(objetHandle){
+  // console.log(`user name is : ${objetHandle.userName} user price is :${objetHandle.price}`)
+}
+
+hadnleObject(allUser)//value pass by function from object allUser
+
+hadnleObject({
+  userName :"same",//value pass by function by direct 
+  price:499
+}) 
+
+const newArray = [200,400,600,100]
+
+function returnSecondValue (getArray){
+  return getArray[1]
+  
+}
+
+// console.log(returnSecondValue(newArray))//value pass by function array form
+console.log(returnSecondValue([400,500,100,200]))//value pass by function direct array form
