@@ -80,5 +80,5 @@ function returnSecondValue (getArray){
   
 }
 
-// console.log(returnSecondValue(newArray))//value pass by function array form
+console.log(returnSecondValue(newArray))//value pass by function array form
 console.log(returnSecondValue([400,500,100,200]))//value pass by function direct array form

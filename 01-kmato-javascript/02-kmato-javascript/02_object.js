@@ -42,3 +42,5 @@ console.log(newUser.greeting())//calling the function value
 console.log(newUser.greeting)//function will not be execute but it will be call and give the reffrence
 
 console.log(newUser.greeting2());
+
+
