@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document object model</title>
+</head>
+<body>
+  <img src="" alt="not loaded" id="image">
+  <script>
+    document.getElementById("image").src = ""
+  </script>
+  <p>the original image was changed</p>
+  
+
+  <p id="dem"></p>
+  <script>
+    document.getElementById("dem").innerHTML = "date:" + Date()
+  </script>
+
+  <p>Lorem ipsum dolor sit amet.</p>
+  <script>
+    document.write (Date())
+  </script>
+  <p>Lorem ipsum dolor sit amet.</p>
+</body>
+</html>
