@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document object model</title>
+</head>
+<body>
+  <p id="demo">Hello world!</p>
+  <script>document.getElementById("demo").innerHTML = "hello kmato" </script>
+  <p>element has been changed</p>
+  
+  <h1 id="id1">old heading</h1>
+</body>
+<script>
+  const a = document.getElementById("id1")
+  a.innerHTML = "new heading"
+</script>
+</html>
