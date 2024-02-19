@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document object model</title>
+</head>
+<body>
+  <h1>javascript HTML Dom</h1>
+  <div id="main">
+    <p>this is first paragraph</p>
+    <p>this is second paragraph</p>
+  </div>
+  <p id="demo"></p>
+</body>
+<script>
+  const x = document.getElementById("main")
+  const y = x.getElementsByTagName("p")
+  document.getElementById("demo").innerHTML = 'here the inside of main div index are access  ' + y[1].innerHTML
+</script>
+</html>
