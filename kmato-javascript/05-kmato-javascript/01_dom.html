@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM(Document object model)</title>
+</head>
+<body>
+  <h2>here the content are changed</h2>
+  <p id="second">welcome to learning the document object model</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, doloremque laudantium. Ipsum.</p>
+  <p id="first"></p>
+</body>
+<script>
+
+  const addedNewPara =document.getElementsByTagName('p');
+  // const newPara = document.getElementById('second');
+  // document.getElementById('first').innerHTML = 'hello programmers!' + newPara.innerHTML;
+  // document.getElementById('first').innerHTML = 'value acces by index!' + addedNewPara[o].innerHTML;
+  document.getElementById('first').innerHTML =  addedNewPara[0].innerHTML;
+
+</script>
+</html>
