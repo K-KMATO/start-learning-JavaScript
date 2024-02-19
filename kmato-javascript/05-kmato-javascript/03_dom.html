@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document object model</title>
+</head>
+<body>
+  <h2>getElementsByClassName</h2>
+  <p class="first">this is the first paragraph</p>
+  <p class="first">this is the second paragraph</p>
+  <p class="first">this is the third paragraph</p>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+</body>
+<script>
+  const x = document.getElementsByClassName("first")
+  document.getElementById("demo").innerHTML ="here the class are shown as index  "+ x[1].innerHTML
+
+  const y = document.querySelectorAll("p.first")
+  document.getElementById("demo1").innerHTML= "here the class are select with querry selector all and value access with index [] " + y[2].innerHTML
+</script>
+</html>
