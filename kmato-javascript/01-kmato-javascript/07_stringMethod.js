@@ -7,52 +7,126 @@ const myNumber = 9370410243
 
 const myName = new String("Imran Ahmad Khan")//this is string object
 
-// In string there is 1 property (length)
-// In string there is 
-// charAt()	Returns the character at a specified index (position)
-console.log(myName.charAt(0))
-// charCodeAt()	Returns the Unicode of the character at a specified index
- console.log(myName.charCodeAt(1))
-// concat()	Returns two or more joined strings
-console.log(myName.concat(name))
-// constructor	Returns the string's constructor function
-let str1 = "hello"
-let text = str1.constructor
-console.log(text)
-// endsWith()	Returns if a string ends with a specified value
-console.log(myName.endsWith("Khan"))
-// fromCharCode()	Returns Unicode values as characters
-let msg = String.fromCharCode(65)
-console.log(msg)
-// includes()	Returns if a string contains a specified value
-// indexOf()	Returns the index (position) of the first occurrence of a value in a string
-// lastIndexOf()	Returns the index (position) of the last occurrence of a value in a string
-// length	Returns the length of a string
-console.log(myName.length)
-// localeCompare()	Compares two strings in the current locale
-// match()	Searches a string for a value, or a regular expression, and returns the matches
-// prototype	Allows you to add properties and methods to an object
-// repeat()	Returns a new string with a number of copies of a string
-// replace()	Searches a string for a pattern, and returns a string where the first match is replaced
-// replaceAll()	Searches a string for a pattern and returns a new string where all matches are replaced
-// search()	Searches a string for a value, or regular expression, and returns the index (position) of the match
-// slice()	Extracts a part of a string and returns a new string
-// split()	Splits a string into an array of substrings
-// startsWith()	Checks whether a string begins with specified characters
-// substr()	Extracts a number of characters from a string, from a start index (position)
-// substring()	Extracts characters from a string, between two specified indices (positions)
-// toLocaleLowerCase()	Returns a string converted to lowercase letters, using the host's locale
-// toLocaleUpperCase()	Returns a string converted to uppercase letters, using the host's locale
-// toLowerCase()	Returns a string converted to lowercase letters
-console.log(myName.toLowerCase())
-// toString()	Returns a string or a string object as a string
-// toUpperCase()	Returns a string converted to uppercase letters
-console.log(myName.toUpperCase())
-// trim()	Returns a string with removed whitespaces
-console.log(myName.trim())
-// trimEnd()	Returns a string with removed whitespaces from the end
-// trimStart()	Returns a string with removed whitespaces from the start
-// valueOf()	Returns the primitive value of a string or a string object
-let old = "hello world !"
-let result = old.valueOf()
-console.log(result)
+
+
+// the escape sequence \"insert doble quate\"
+let oldText = "my-self \"imran\" from bhiwandi"
+console.log(oldText)
+
+// insert \' single quate in a string
+let anotherText = 'it\'s time to show the power of education'
+console.log(anotherText)
+
+// the escape sequence \\ insert a backslash in a string
+let newText = "the \\ character is called backslash."
+console.log(newText)
+
+// try it also
+
+// Code	Result
+// \b	Backspace
+// \f	Form Feed
+// \n	New Line
+// \r	Carriage Return
+// \t	Horizontal Tabulator
+// \v	Vertical Tabulator
+
+
+
+// There are 4 methods for extracting string characters:
+
+// The at(position) Method
+// The charAt(position) Method
+// The charCodeAt(position) Method
+// Using property access [] like in arrays
+var printMesssage = "Hello World"
+console.log(printMesssage.charAt(0))
+console.log(printMesssage.at(1))
+console.log(printMesssage.charCodeAt(0))
+console.log(printMesssage[2])
+
+
+// There are 3 methods for extracting a part of a string:
+
+// slice(start, end)
+// substring(start, end)
+// substr(start, length)
+
+let fruit = "Apple, Orange, Banana"
+console.log(fruit.slice(7,11))
+console.log(fruit.slice(-12,-8))//string from -12 position to -10 position
+console.log(fruit.substring(7,2))//substring method in javascript not accept negative values as parameters
+console.log(fruit.substr(6,4))
+
+// Converting to Upper and Lower Case
+// A string is converted to upper case with toUpperCase():
+console.log(fruit.toUpperCase())
+// A string is converted to lower case with toLowerCase():
+console.log(fruit.toLowerCase())
+
+
+// JavaScript String concat()
+// concat() joins two or more strings:
+let text1 = "hello "
+let text2 = " world"
+console.log(text1.concat(text2))
+console.log("hello ".concat(" world!"))
+
+
+// JavaScript String trim()
+// The trim() method removes whitespace from both sides of a string:
+
+let anotherText1 = "      kmato     "
+console.log(anotherText1.trim())
+console.log(anotherText1.trimStart())//trimStart() method work like trim() but it will remove whitespace from start only
+console.log(anotherText1.trimEnd())//trimeEnd() method work like trim() but remove whitespace only from end
+
+
+
+// String padStart(), padEnd()
+// It pads a string with another string (multiple times) until it reaches a given length.
+
+let padString = "9"
+// padString= padString.padEnd(8,"0")//
+padString= padString.padStart(8,"0")
+console.log(padString)//padStart()
+//Work with number
+let numb = 4
+let character = numb.toString()
+console.log(character.padStart(3,0))
+console.log(character.padEnd(3,0))
+
+
+
+
+// JavaScript String repeat()
+// The repeat() method returns a string with a number of copies of a string.
+// The repeat() method returns a new string.
+// The repeat() method does not change the original string.
+
+let greet= "Hello Programmer "
+console.log(greet.repeat(3))
+
+
+
+
+// Replacing String Content
+// The replace() method replaces a specified value with another value in a string:
+
+let greeting = "please visit Microsoft Microsoft MICROSOFT!"
+console.log(greeting.replace("Microsoft","my Office"))
+console.log(greeting.replace(/Microsoft/g,"my home"))//f you want to replace all matches, use a regular expression with the /g flag set.
+
+console.log(greeting.replace(/MICROSOFT/i,"welcome"))//To replace case insensitive, use a regular expression with an /i flag (insensitive):
+
+console.log(greeting.replaceAll("Microsoft","kmato"))
+console.log(greeting.replaceAll(/MICROSOFT/g,"imran"))
+
+// JavaScript String split()
+// A string can be converted to an array with the split() method:
+let newArr= "Imran"
+const myArray=newArr.split("")
+console.log(myArray)
+for(const index of myArray){
+  console.log(index)
+}
