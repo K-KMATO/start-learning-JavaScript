@@ -9,6 +9,40 @@ const myName = new String("Imran Ahmad Khan")//this is string object
 
 
 
+
+
+
+
+
+
+
+// Basic String Methods
+// Javascript strings are primitive and immutable: All string methods produces a new string without altering the original string.
+
+// String length
+// String charAt()
+// String charCodeAt()
+// String at()
+// String [ ]
+// String slice()
+// String substring()
+// String substr()
+// See Also:
+// String Search Methods
+// String Templates
+// String toUpperCase()
+// String toLowerCase()
+// String concat()
+// String trim()
+// String trimStart()
+// String trimEnd()
+// String padStart()
+// String padEnd()
+// String repeat()
+// String replace()
+// String replaceAll()
+// String split()
+
 // the escape sequence \"insert doble quate\"
 let oldText = "my-self \"imran\" from bhiwandi"
 console.log(oldText)
