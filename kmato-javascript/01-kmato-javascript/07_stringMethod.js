@@ -27,9 +27,6 @@ const myName = new String("Imran Ahmad Khan")//this is string object
 // String slice()
 // String substring()
 // String substr()
-// See Also:
-// String Search Methods
-// String Templates
 // String toUpperCase()
 // String toLowerCase()
 // String concat()
