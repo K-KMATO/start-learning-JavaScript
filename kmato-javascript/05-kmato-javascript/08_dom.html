@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascript selector</title>
+</head>
+<body>
+   <h1 id="heading1">This is heading </h1>
+   <h2 class="heading2">This is heading 2</h2>
+   <h3>This is heading 3</h3>
+   <input type="text" name="language" id="" value="JS">
+   <input type="text" name="language" id="" value="Python">
+   <h4>this is heading4</h4>
+   <h5>This is heading 5</h5>
+</body>
+<script>
+  let heading1 = document.getElementById("heading1")
+  console.log(heading1)
+  let heading2 = document.getElementsByClassName("heading2")
+  console.log(heading2)
+  let heading3 = document.getElementsByTagName("h3")
+  console.log(heading3)
+  let input = document.getElementsByName("language")
+  console.log(input)
+let heading4 = document.querySelector('h4')
+console.log(heading4)
+let heading5 = document.querySelectorAll('h5')
+console.log(heading5)
+</script>
+</html>
