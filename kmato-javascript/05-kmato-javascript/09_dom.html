@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traversing element</title>
+</head>
+<body>
+  <div class="container">
+    <p class="one">one</p>
+    <p>two</p>
+    <p class="three">three</p>
+    <p>four</p>
+  </div>
+</body>
+<script>
+  let parent = document.querySelector(".one")
+  console.log(parent.parentNode)
+  let child = document.querySelector(".container")
+  console.log(child.childNodes)
+  let siblink = document.querySelector('.container')
+  console.log(siblink.firstChild)
+  console.log(siblink.firstElementChild)
+  console.log(siblink.lastElementChild)
+  let allSiblink = document.querySelector(".three")
+  console.log(allSiblink.previousElementSibling)
+  console.log(allSiblink.nextElementSibling)
+</script>
+</html>
