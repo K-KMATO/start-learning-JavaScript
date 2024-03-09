@@ -157,7 +157,7 @@ const newPeople ={
   firstName:"kmato",
   lastName:"khan"
 }
-console.log(people.fullName.apply(newPeople))//apply method is similar to the call() method 
+// console.log(people.fullName.apply(newPeople))//apply method is similar to the call() method 
 
 //call apply() method with arguments
 const newArg = {
@@ -221,10 +221,50 @@ const anotherUser ={
   firstName:"zackie",
   lastName:"chain",
   fullName:function(){
-    return console.log(this.firstName + this.lastName)
+    // return console.log(this.firstName + this.lastName)
   }
 }
 
 let i = anotherUser.fullName.bind(anotherUser)
 setTimeout (i,3000)
 // console.log(i)
+
+
+/**************javascript Closures **********************/
+//locan variable
+function newFunction(){
+  let a = 4;
+  return a * a ;
+}
+// console.log(newFunction()) // A function can access all variable defined inside the function
+
+// global variable
+let c = 5;
+function globalVar() {
+  return c * c;
+}
+// console.log(globalVar())// but a function can also access variable outside the function 
+
+//javasctiopt Nested Function
+function add(){
+  let counter = 0;
+  function plus() {
+    counter += 1;
+  }
+  plus();
+  return counter;
+}
+// console.log(add())// inner functon plus() has access to the counter variable in the parent function
+
+// clouser (self invokin functions)
+const anotherAdd = (function (){
+  let counter = 0;
+  return function (){
+    counter += 1;
+    return counter;
+  }
+}())
+console.log(anotherAdd());
+console.log(anotherAdd());
+console.log(anotherAdd());
+// A closure is function having access to the parent scope, even after the parent function has closed
