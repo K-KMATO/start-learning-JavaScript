@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javasctipt can hide/show the html elements</title>
+  </head>
+  <body>
+    <h1>Javasctipt can hide and show the html elements</h1>
+    <p id="demo1">Hello developer</p>
+
+    <button
+      type="button"
+      onclick="document.getElementById('demo1').style.display = 'none'"
+    >
+      Hide me!
+    </button>
+
+    <p id="demo2" style="display: none">Hello developer</p>
+    <button
+      type="button"
+      onclick="document.getElementById('demo2').style.display = 'block'">
+      show me!
+    </button>
+  </body>
+</html>
