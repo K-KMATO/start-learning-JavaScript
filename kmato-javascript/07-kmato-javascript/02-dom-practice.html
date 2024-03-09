@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javasctipt can change HTML attributes</title>
+    <style>
+      #bulb {
+        width: 500px;
+        height: 300px;
+        background-color: grey;
+        border-radius: 40px;
+        margin: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Javasctipt can change Html attribute value</h2>
+    <div id="bulb"></div>
+    <button
+      type="button"
+      onclick="document.getElementById('bulb').style.backgroundColor = 'yellow'"
+    >
+      Turn on
+    </button>
+
+    <button
+      type="button"
+      onclick="document.getElementById('bulb').style.backgroundColor = 'black'"
+    >
+      Turn Off
+    </button>
+  </body>
+</html>
